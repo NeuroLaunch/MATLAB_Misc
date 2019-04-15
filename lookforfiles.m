@@ -1,6 +1,6 @@
 % LOOKFORFILES.M
 % function fileNames = lookforfiles(filedir,filtInclude,filtstart,filtext)
-%
+%	Get the name of all files from a directory matching a desired pattern.
 
 function fileNames = lookforfiles(filedir,filtInclude,filtstart,filtext)
 
