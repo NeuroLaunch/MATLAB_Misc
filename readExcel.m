@@ -4,7 +4,7 @@
 % located in file 'xlfile' on page 'xlpage'. 'xlInstruct' is a
 % structure with one element for each output in 'xlData'. The fields
 % for each element (i.e. 'xlInstruct(1)','(2)',etc) are '.name',
-% '.range' (e.g. 'D4:D15', and '.length'; the last may be empty and
+% '.range' (e.g. 'D4:D15'), and '.length'; the last may be empty and
 % is intended to force the output vector or array to fill with NaNs if
 % the number of readable rows is less than the expected number.
 %	Output comes in the form 'xlData.namex' = 'valuex', where '.namex'
