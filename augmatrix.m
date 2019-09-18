@@ -1,13 +1,15 @@
 % AUGMATRIX.M
 % function MatrixOut = augmatrix(MatrixIn,nextra)
-%	Extend a square matrix of column vectors in 'MatrixIn' by 2 x 'nextra'.
-% The original vectors are assumed to be predictable in structure
-% and have a local maximum or minimum near the diagonal element
-% (e.g. for cochlear implant EFI waveforms). The added data points will
+%	Extend a square matrix of column vectors in 'MatrixIn' by 'nextra'
+% rows at the start and end of each vector. The original vectors
+% are assumed to be predictable in structure and have a local
+% maximum or minimum near the diagonal element (e.g. for
+% cochlear implant EFI waveforms). The added data points will
 % be determined by either mirroring the data around the diagonal
-% element of the vector, or by linear interpolation.
+% element of the original matrix, or by linear interpolation.
 %	'MatrixIn' must be square and have at least 7 rows, and 'nextra'
 % can't be more than half the number of rows.
+%	This function was designed for augmenting EFI matrices.
 %
 
 function MatrixOut = augmatrix(MatrixIn,nextra)
@@ -17,7 +19,7 @@ function MatrixOut = augmatrix(MatrixIn,nextra)
 if ndims(MatrixIn) > 2
 	error('Input matrix has too many dimensions.');
 elseif nRow ~= nCol
-	error('Input matrix must be square.');		% #SMB:2015.08.05
+	error('Input matrix must be square.');
 elseif nRow < 7
 	error('The number of rows of the input matrix is too small.');
 elseif mod(nextra,1) ~= 0
