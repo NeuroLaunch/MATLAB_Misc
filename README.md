@@ -17,6 +17,10 @@ M-file | Description / Example
 &nbsp; | 
 [compare_structures](compare_structures.m) | Determine whether two structures have matching fields containing identical values
 &nbsp; | 
-[struct2array](struct2array.m) | Combine N-length numeric values from a field in an M-length structure to a single M*N array.
+[struct2array](struct2array.m) | Combine N-length numeric values from a field in an M-length structure to a single M\*N array.
 &nbsp; | 
-
+[augmatrix](struct2array.m) | Extend the rows of a square matrix using linear interpolation or simple mirroring around the diagonal pivot.
+&nbsp; | 
+[draggable](draggable.m) | Third-party function to allow graphic objects to be dragged. I added a callback routine to it, now available
+in a more current version on the Mathworks File Exchange, to facilitate the manual creation of boxes around data points in a scatter plot (e.g. for semi-supervised classification of neural spike waveforms).
+&nbsp; | 
