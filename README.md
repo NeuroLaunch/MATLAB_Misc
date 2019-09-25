@@ -26,4 +26,4 @@ M-file | Description / Example
 [findjobj](findjobj.m) | Third-party function to find a java object within a Matlab graphics object, specified by its handle
 &nbsp; | 
 [make_vararray](make_vararray.m) | Transform scalars or vectors to an array of permutations of their elements, using the MATLAB function NDGRID
-&nbsp; | _var1 = [ 0 30 60 90 ],  var2 = [ 100 200 ];  output = [ 0   30  60  90  0   30  60  90 ; 100 100 100 100 200 200 200 200 ]
+&nbsp; | _var1 = [ 0 30 60 90 ],  var2 = [ 100 200 ];  output = [ 0   30  60  90  0   30  60  90 ; 100 100 100 100 200 200 200 200 ]_
