@@ -19,11 +19,23 @@ M-file | Description / Example
 &nbsp; | 
 [struct2array](struct2array.m) | Combine N-length numeric values from a field in an M-length structure to a single M\*N array
 &nbsp; | 
+[zerocell](zerocell.m) | Create an M-dimensional cell array that contains N-dimensional all-zero matrices
+&nbsp; | 
 [augmatrix](struct2array.m) | Extend the rows of a square matrix using linear interpolation or simple mirroring around the diagonal pivot
 &nbsp; | 
-[draggable](draggable.m) | Third-party function to allow graphic objects to be dragged. I added a callback routine, now available in a more on the Mathworks File Exchange, to facilitate the manual creation of boxes around data points in a scatter plot (e.g. for semi-supervised classification of neural spike waveforms).
+[draggable](draggable.m) | Third-party function to allow graphic objects to be dragged; I added a callback routine, now available in a more on the Mathworks File Exchange, to facilitate the manual creation of boxes around data points in a scatter plot (e.g. for semi-supervised classification of neural spike waveforms)
 &nbsp; | 
 [findjobj](findjobj.m) | Third-party function to find a java object within a Matlab graphics object, specified by its handle
 &nbsp; | 
+[sgfilter](sgfilter.m) | Third-party function to implement a smoothing FIR filter via local least-squares fitting
+&nbsp; | 
+[xticklabel_rotate](xticklabel_rotate.m) | Third-party function to easily rotate x-axis labels by a specified number of degrees
+&nbsp; | 
+[readExcel](readExcel.m) | Read columns from an Excel spread sheet from a specified page using instructions for column/row ranges; output is a 1x1 structure, with a different field for each output vector or 2-D matrix
+&nbsp; | 
+[tryload](tryload.m) | Load specific variables (wildcard "\*" accepted) into a structure or workspace
+&nbsp; | 
 [make_vararray](make_vararray.m) | Transform scalars or vectors to an array of permutations of their elements, using the MATLAB function NDGRID
 &nbsp; | _var1 = [ 0 30 60 90 ],  var2 = [ 100 200 ];  output = [ 0   30  60  90  0   30  60  90 ; 100 100 100 100 200 200 200 200 ]_
+[useful](useful.m) | A random assortment of code snippets I've found useful for reference
+&nbsp; | 
